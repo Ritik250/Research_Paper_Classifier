@@ -1,0 +1,10 @@
+stage,records_before,records_after,removed,notes
+Raw concatenation,8000,8000,0,All six supplied CSV files; labels inferred from source filename as requested.
+Exclude non-research document types,8000,7952,48,"Excluded document types: conference review, editorial, erratum, letter, note, retracted"
+Require usable title and abstract,7952,7926,26,Abstract must contain at least 80 normalized characters; blank/short abstracts removed.
+Exclude cross-label EID conflicts,7926,4998,2928,Excluded all rows for 849 EIDs associated with more than one provisional class.
+Exclude cross-label abstract conflicts,4998,4998,0,Excluded all rows for 0 normalized abstracts mapped to multiple provisional classes.
+Deduplicate by EID,4998,3231,1767,Same EID retained once; newer export preferred for same-class duplicates.
+Deduplicate by DOI,3231,3231,0,Same DOI retained once after cross-label conflicts were removed.
+Deduplicate normalized abstracts,3231,3231,0,Exact normalized abstracts retained once; cross-label cases already audited and excluded.
+Final cleaned dataset,3231,3231,0,Final unique usable labeled abstracts before balancing.

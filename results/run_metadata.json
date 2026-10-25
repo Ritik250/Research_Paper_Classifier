@@ -1,0 +1,25 @@
+{
+  "selected_model": "SVM (LinearSVC)",
+  "selection_metric": "validation_macro_f1",
+  "validation_macro_f1": 0.8260275610558097,
+  "random_seed": 42,
+  "dataset": "data/processed/balanced_dataset.csv",
+  "n_total_balanced": 2526,
+  "class_counts": {
+    "Social Sciences": 842,
+    "Business": 842,
+    "Science (including Engineering)": 842
+  },
+  "n_train": 1768,
+  "n_validation": 379,
+  "n_train_validation": 2147,
+  "n_test": 379,
+  "classes": [
+    "Science (including Engineering)",
+    "Business",
+    "Social Sciences"
+  ],
+  "text_preprocessing": "NLTK wordpunct_tokenize + SnowballStemmer + English stopword filtering; TF-IDF unigrams/bigrams",
+  "model_path": "models/research_classifier.joblib",
+  "note": "Model selection uses validation macro F1 only. Held-out test metrics are reported for the selected model only; test metrics are not used to select the model."
+}

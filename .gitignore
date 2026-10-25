@@ -1,0 +1,21 @@
+
+# Python environment
+.venv/
+.venv313/
+venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+
+# OS/editor files
+.DS_Store
+.vscode/
+
+# Logs and temporary files
+*.log
