@@ -1,6 +1,8 @@
 # ResearchField AI — Balanced Research Abstract Classification
 
 ResearchField AI predicts the likely field of an academic publication from its abstract. The primary experiment has three classes:
+Check out the [Google Homepage]([https://www.google.com](https://researchpaperclassifier-t3wzhia9ychfgnv2srnzbk.streamlit.app/)).
+
 
 1. **Science (including Engineering)**
 2. **Business**
